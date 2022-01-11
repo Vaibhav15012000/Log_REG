@@ -1,0 +1,33 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Woman Affairs Prediction</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Hind:300" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+ <div class="login">
+	<h1>Affairs Prediction</h1>
+
+    <form action="/predict"method="post">
+    	<input  type="text" name="rate_marriage" placeholder="rate of marriage eg:1.0-5.0" required="required" />
+        <input type="text" name="age" placeholder="age" required="required" />
+		<input type="text" name="children" placeholder="children eg:1.0" required="required" />
+		<input type="text" name="religious" placeholder="religious eg:1.0" required="required" />
+		<input type="text" name="educ" placeholder="educ eg: 12.0" required="required" />
+		<input type="text" name="occupation" placeholder="occupation eg 1.0" required="required" />
+		<input type="text" name="occupation_husb" placeholder="occupation eg:0.1" required="required" />
+		<input type="text" name="affairs" placeholder="affairs eg: 0.1111" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+   <br>
+   <br>
+ </div>
+
+</body></html>
